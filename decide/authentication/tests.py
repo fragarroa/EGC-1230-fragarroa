@@ -6,6 +6,8 @@ from django.contrib.auth.models import User
 from rest_framework.authtoken.models import Token
 
 from base import mods
+from base.mods import register_status
+from base.tests import BaseTestCase
 
 class AuthTestExecuted(BaseTestCase):
     def setUp(self):

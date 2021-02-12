@@ -5,6 +5,7 @@ from rest_framework.test import APIClient
 
 from .models import Census
 from base import mods
+from base.mods import register_status
 from base.tests import BaseTestCase
 
 
