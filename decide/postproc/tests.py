@@ -4,6 +4,7 @@ from rest_framework.test import APIClient
 from rest_framework.test import APITestCase
 
 from base import mods
+from base.tests import BaseTestCase
 
 
 class PostProcTestExecuted(BaseTestCase):
