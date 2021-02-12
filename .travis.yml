@@ -21,3 +21,10 @@ script:
   - coverage run --branch --source=. ./manage.py test authentication census --keepdb --with-xunit
   - coverage xml
   - python-codacy-coverage -r coverage.xml
+deploy:
+  provider: heroku
+  app: egc-1230-fragarroa
+  strategy: git
+  api_key: $HEROKU_AUTH_TOKEN
+  on:
+    branch: master
